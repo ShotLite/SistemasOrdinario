@@ -1,0 +1,4 @@
+//Hola mundo
+main(){
+	int i=0;
+}
