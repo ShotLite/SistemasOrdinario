@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 public class Jflexproy1 {
 
     
-    public static void main(String[] args) throws Exception {
+  /*public static void main(String[] args) throws Exception {
         pantalla_jflex.main(args);
         //se quita
         /*
@@ -18,8 +18,8 @@ public class Jflexproy1 {
         }catch(Exception e){
             throw new Exception("Error al generar Archivo Lexer");
         }
-        */
-    }
+        
+    }*/
     
     public static void generarLexer() throws Exception{
         // Ruta del archivo donde se encuentra el archivo lex.flex
@@ -32,16 +32,16 @@ public class Jflexproy1 {
         }
     }
     
-    /*
-    public static void main(String[] args) throws Exception {
+    
+   /* public static void main(String[] args) throws Exception {
        System.out.println("Generando Archivos Lexers");
         try{
            generar();
         }catch(Exception e){
            throw new Exception("Error al generar Archivo Lexer");
        }
-     }
-    */
+     }*/
+    
 
     public static void generar() throws IOException, Exception{
         String rutaProy = "C:/Users/pima_/OneDrive/Documentos/NetBeansProjects/jflexproy1";
@@ -71,5 +71,5 @@ public class Jflexproy1 {
         );
     }
 
-    
+ 
 }

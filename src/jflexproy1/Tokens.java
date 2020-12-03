@@ -29,10 +29,9 @@ public enum Tokens {
     Corchete_c,
     Main,
     P_coma,
+    Dos_Puntos,
     Identificador,
     Numero,
-    Reservadas,
     ERROR
-
-
 }
+

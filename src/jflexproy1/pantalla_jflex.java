@@ -46,7 +46,7 @@ public class pantalla_jflex extends javax.swing.JFrame {
         // 2. Quilar la línea amarilla de la posición del cursor
         txtEntrada.setHighlightCurrentLine(false);
         // 3. Inicializar txtEntrada con un mensaje de bienvenida
-        txtEntrada.setText("//Hola mundo");
+        //txtEntrada.setText("//Hola mundo");
 
         // 4. Integrar txtEntrada a TextScolPane
         RTextScrollPane sp = new RTextScrollPane(txtEntrada);
@@ -92,7 +92,7 @@ public class pantalla_jflex extends javax.swing.JFrame {
 
     public void guardarArchivo(String consola) throws IOException {
 
-        FileWriter archivo = new FileWriter("C:/Users/CiPp9/Documents/Compiladores/Resultado.txt");
+        FileWriter archivo = new FileWriter("C:/Users/pima_/OneDrive/Documents/Compiladores/Resultado.txt");
         archivo.write(consola);
         archivo.close();
         JOptionPane.showMessageDialog(null, "Se ha guardado el archivo.");
@@ -215,6 +215,9 @@ public class pantalla_jflex extends javax.swing.JFrame {
                     break;
                 case P_coma:
                     resultado += "  <Punto y coma>\t" + lexer.lexeme + "\n";
+                    break;
+                case Dos_Puntos:
+                    resultado += " <Dos Puntos>\t" + lexer.lexeme + "\n";
                     break;
                 case Identificador:
                     resultado += "  <Identificador>\t\t" + lexer.lexeme + "\n";

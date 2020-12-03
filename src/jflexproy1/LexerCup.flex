@@ -80,12 +80,11 @@ espacio=[ ,\t,\r,\n]+
 ( "main" ) {return new Symbol(sym.Main);}
 /* Punto y coma */
 ( ";" ) {return new Symbol(sym.P_coma);}
-
+/*Dos Puntos */
+( ":" ) {return new Symbol(sym.Dos_Puntos);}
 /* Identificador */
 {L}({L}|{D})* {return new Symbol(sym.Identificador);}
 /* Numero */
 ("(-"{D}+")")|{D}+ {return new Symbol(sym.Numero);}
 /* Error de analisis */
  . {return new Symbol(sym.ERROR);}
-
-
