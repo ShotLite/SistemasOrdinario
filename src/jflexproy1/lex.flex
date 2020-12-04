@@ -23,7 +23,6 @@ espacio=[ ,\t,\r]+
 
 /* Comillas */
 ( "\"" ) {lexeme=yytext(); return Comillas;}
-
 /* Tipos de datos */
 ( byte | int | char | long | float | double ) {lexeme=yytext(); return T_dato;}
 
@@ -47,7 +46,7 @@ espacio=[ ,\t,\r]+
 
 /* Operador Igual */
 ( "=" ) {lexeme=yytext(); return Igual;}
-
+∫
 /* Operador Suma */
 ( "+" ) {lexeme=yytext(); return Suma;}
 
@@ -99,8 +98,12 @@ espacio=[ ,\t,\r]+
 /* Punto y coma */
 ( ";" ) {lexeme=yytext(); return P_coma;}
 
-/*Dos Puntos */
+
+/* Dos Puntos */
 ( ":" ) {lexeme=yytext(); return Dos_Puntos;}
+
+/* Coma */
+( "," ) {lexeme=yytext(); return Coma_Simple;}
 
 /* Identificador */
 {L}({L}|{D})* {lexeme=yytext(); return Identificador;}

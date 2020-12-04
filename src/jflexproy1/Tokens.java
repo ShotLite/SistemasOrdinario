@@ -2,7 +2,7 @@ package jflexproy1;
 
 
 public enum Tokens {
-    Linea,
+   Linea,
     Comillas,
     T_dato,
     Cadena,
@@ -29,7 +29,10 @@ public enum Tokens {
     Corchete_c,
     Main,
     P_coma,
+    
     Dos_Puntos,
+    Coma_Simple,
+    
     Identificador,
     Numero,
     ERROR

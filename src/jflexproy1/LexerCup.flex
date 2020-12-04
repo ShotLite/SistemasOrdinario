@@ -1,5 +1,4 @@
 package jflexproy1;
-
 import java_cup.runtime.Symbol;
 %%
 %class LexerCup
@@ -54,7 +53,7 @@ espacio=[ ,\t,\r,\n]+
 ( "*" ) {return new Symbol(sym.Multiplicacion);}
 /* Operador Division */
 ( "/" ) {return new Symbol(sym.Division);}
-/* Operadores logicos */
+/* Operad∫ores logicos */
 ( "&&" | "||" | "!" | "&" | "|" ) {return new Symbol(sym.Op_logico);}
 /*Operadores Relacionales */
 ( ">" | "<" | "==" | "!=" | ">=" | "<=" | "<<" | ">>" ) {return new Symbol(sym.Op_relacional);}
@@ -80,8 +79,15 @@ espacio=[ ,\t,\r,\n]+
 ( "main" ) {return new Symbol(sym.Main);}
 /* Punto y coma */
 ( ";" ) {return new Symbol(sym.P_coma);}
-/*Dos Puntos */
+
+
+
+/* Dos Puntos */
 ( ":" ) {return new Symbol(sym.Dos_Puntos);}
+/* Coma */
+( "," ) {return new Symbol(sym.Coma_Simple);}
+
+
 /* Identificador */
 {L}({L}|{D})* {return new Symbol(sym.Identificador);}
 /* Numero */

@@ -1,3 +1,10 @@
+
 {
-	cadena : "hola";
+	"LigaFutbol": "n";
+	"Equipo":"Pumas";
+	posicion:2;
+	eliminado:true;
 }
+
+
+
